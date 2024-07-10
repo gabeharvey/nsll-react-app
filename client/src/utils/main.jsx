@@ -3,10 +3,17 @@ import App from './App.jsx'
 import './index.css'
 import {ChakraProvider} from '@chakra-ui/react';
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
+import Home from '../components/Home.jsx';
 
 const router = createBrowserRouter([
   { path: '/',
-    element: <App />
+    element: <App />,
+    children: [
+      {
+        index: true,
+        element: <Home />
+      }
+    ]
   }
 ])
 
