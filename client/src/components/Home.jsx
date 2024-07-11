@@ -7,6 +7,24 @@ const Home = () => {
 
   return (
     <Flex direction="column" align="center" justify="center" minHeight="100vh" bg='skyblue' p={5} textAlign="center">
+        <Box
+        as="button"
+        onClick={() => handleCardClick('Welcome!')}
+        bgImage={`url('/src/assets/nsll-logo.jpg')`}
+        bgSize="cover"
+        bgPos="center"
+        boxShadow="md"
+        p={2}
+        rounded="md"
+        mb={20}
+        width="300px"
+        height="200px"
+        display="flex"
+        flexDirection="column"
+        justifyContent="center"
+        alignItems="center"
+      >
+      </Box>
       <Flex direction='column' align='center' mb={10}>
         <Text fontSize="2xl" color='white' fontFamily='Permanent Marker, sans-serif' mb={10}>Welcome to Northside Suburban Little League</Text>
       </Flex>
