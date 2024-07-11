@@ -26,7 +26,7 @@ const Home = () => {
       >
       </Box>
       <Flex direction='column' align='center' mb={10}>
-        <Text fontSize="2xl" color='white' fontFamily='Permanent Marker, sans-serif' mb={10}>Welcome to Northside Suburban Little League</Text>
+        <Text fontSize="2xl" color='white' fontFamily='Graduate, sans-serif' mb={10}>Welcome to Northside Suburban Little League</Text>
       </Flex>
       <Flex direction={['column', 'row']} spacing={10}>
         <Box
@@ -46,7 +46,7 @@ const Home = () => {
           justifyContent="center"
           alignItems="center"
         >
-          <Text fontSize="xl" fontFamily='Staatliches, sans-serif' color='white' mb={60}>Baseball</Text>
+          <Text fontSize="xl" fontFamily='Graduate, sans-serif' color='white' mb={60}>Baseball</Text>
         </Box>
         <Box
           as="button"
@@ -65,7 +65,7 @@ const Home = () => {
           justifyContent="center"
           alignItems="center"
         >
-          <Text fontSize="xl" fontFamily='Staatliches, sans-serif' color='orange' mt={60}>Softball</Text>
+          <Text fontSize="xl" fontFamily='Graduate, sans-serif' color='orange' mt={60}>Softball</Text>
         </Box>
       </Flex>
     </Flex>

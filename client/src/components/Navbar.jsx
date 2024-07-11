@@ -25,7 +25,7 @@ const Navbar = () => {
             bg="black"
             height="60px"
         >
-            <Box fontFamily="Staatliches, sans-serif" fontSize="20px" color="skyblue">Northside Suburban Little League</Box>
+            <Box fontFamily="Staatliches, sans-serif" fontSize="30px" color="skyblue">Northside Suburban Little League</Box>
             <Spacer />
             {isMobile ? (
                 <IconButton
@@ -40,7 +40,7 @@ const Navbar = () => {
                 />
             ) : (
                 <Box display={{ base: 'none', md: 'block' }}>
-                    <Flex align="right" fontFamily='Staatliches, sans-serif' fontSize='15px' color='white'>
+                    <Flex align="right" fontFamily='Graduate, sans-serif' fontSize='15px' color='white'>
                         <Box cursor="pointer" mr={4}>Register</Box>
                         <Box cursor="pointer" mr={4}>Log In</Box>
                         <Box cursor="pointer" mr={4}>Field Status</Box>
@@ -49,7 +49,7 @@ const Navbar = () => {
             )}
             <Drawer placement="right" onClose={onClose} isOpen={isOpen}>
                 <DrawerOverlay />
-                <DrawerContent bg='skyblue' color='white' fontFamily='Staatliches, sans-serif'  _focus={{ outline: 'none', boxShadow: 'none' }} _active={{ background: 'transparent' }} >
+                <DrawerContent bg='skyblue' color='white' fontFamily='Graduate, sans-serif'  _focus={{ outline: 'none', boxShadow: 'none' }} _active={{ background: 'transparent' }} >
                     <DrawerCloseButton _hover={{ cursor: 'pointer' }} mt='8px' />
                     <DrawerHeader borderBottom='3px solid white'>Menu</DrawerHeader>
                     <DrawerBody>
