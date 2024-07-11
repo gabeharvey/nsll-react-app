@@ -6,15 +6,15 @@ const Home = () => {
   };
 
   return (
-    <Flex direction="column" align="center" justify="center" minHeight="100vh" bg='skyblue' p={5}>
+    <Flex direction="column" align="center" justify="center" minHeight="100vh" bg='skyblue' p={5} textAlign="center">
       <Flex direction='column' align='center' mb={10}>
-        <Text fontSize="2xl" color='white' textalign='center' fontFamily='Permanent Marker, sans-serif' mb={10}>Welcome to Northside Suburban Little League</Text>
+        <Text fontSize="2xl" color='white' fontFamily='Permanent Marker, sans-serif' mb={10}>Welcome to Northside Suburban Little League</Text>
       </Flex>
       <Flex direction={['column', 'row']} spacing={10}>
         <Box
           as="button"
           onClick={() => handleCardClick('Baseball!')}
-          bgImage="url('src/assets/baseball-player.jpg')"
+          bgImage="url('src/assets/baseball.jpg')"
           bgSize="cover"
           bgPos="center"
           boxShadow="md"
@@ -28,7 +28,7 @@ const Home = () => {
           justifyContent="center"
           alignItems="center"
         >
-          <Text fontSize="xl" fontFamily='Staatliches, sans-serif' color='green' mt={60}>Baseball</Text>
+          <Text fontSize="xl" fontFamily='Staatliches, sans-serif' color='white' mb={60}>Baseball</Text>
         </Box>
         <Box
           as="button"
