@@ -32,21 +32,21 @@ const Home = () => {
         <Box
           as="button"
           onClick={() => handleCardClick('Baseball!')}
-          bgImage="url('src/assets/baseball.jpg')"
+          bgImage="url('src/assets/baseball-player.jpg')"
           bgSize="cover"
           bgPos="center"
           boxShadow="md"
           p={5}
           rounded="md"
           m={2}
-          width="200px"
-          height="300px"
+          width="300px"
+          height="400px"
           display="flex"
           flexDirection="column"
           justifyContent="center"
           alignItems="center"
         >
-          <Text fontSize="xl" fontFamily='Graduate, sans-serif' color='white' mb={60}>Baseball</Text>
+          <Text fontSize="xl" fontFamily='Graduate, sans-serif' color='white' mb={80}>Baseball</Text>
         </Box>
         <Box
           as="button"
@@ -58,14 +58,14 @@ const Home = () => {
           p={5}
           rounded="md"
           m={2}
-          width="200px"
-          height="300px"
+          width="300px"
+          height="400px"
           display="flex"
           flexDirection="column"
           justifyContent="center"
           alignItems="center"
         >
-          <Text fontSize="xl" fontFamily='Graduate, sans-serif' color='orange' mt={60}>Softball</Text>
+          <Text fontSize="xl" fontFamily='Graduate, sans-serif' color='yellow' mt={80}>Softball</Text>
         </Box>
       </Flex>
     </Flex>

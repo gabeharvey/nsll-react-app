@@ -8,6 +8,8 @@ const Footer = () => {
             color="skyblue"
             py={4}
             fontFamily="Graduate, sans-serif"
+            bgImage="linear-gradient(45deg, #333 25%, transparent 25%, transparent 50%, #333 50%, #333 75%, transparent 75%, transparent)"
+            bgSize="10px 10px"
         >
             <Flex
                 direction={{ base: 'column', md: 'row' }}
