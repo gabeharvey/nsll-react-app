@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, Flex, IconButton, Spacer, useDisclosure, Drawer, DrawerOverlay, DrawerContent, DrawerCloseButton, DrawerHeader, DrawerBody } from '@chakra-ui/react';
+import { Box, Flex, IconButton, Spacer, useDisclosure, Drawer, DrawerOverlay, DrawerContent, DrawerCloseButton, DrawerHeader, DrawerBody, Link } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 
 const Navbar = () => {
@@ -25,7 +25,7 @@ const Navbar = () => {
             bg="black"
             height="60px"
         >
-            <Box fontFamily="Staatliches, sans-serif" fontSize="30px" color="skyblue">Northside Suburban Little League</Box>
+            <Box fontFamily="Staatliches, sans-serif" fontSize="22px" color="skyblue" p={1}>Northside Suburban Little League</Box>
             <Spacer />
             {isMobile ? (
                 <IconButton
@@ -41,9 +41,9 @@ const Navbar = () => {
             ) : (
                 <Box display={{ base: 'none', md: 'block' }}>
                     <Flex align="right" fontFamily='Graduate, sans-serif' fontSize='15px' color='white'>
-                        <Box cursor="pointer" mr={4}>Register</Box>
-                        <Box cursor="pointer" mr={4}>Log In</Box>
-                        <Box cursor="pointer" mr={4}>Field Status</Box>
+                        <Link cursor="pointer" mr={4}>Register</Link>
+                        <Link cursor="pointer" mr={4} href='/login'>Log In</Link>
+                        <Link cursor="pointer" mr={4}>Field Status</Link>
                     </Flex>
                 </Box>
             )}
@@ -53,9 +53,9 @@ const Navbar = () => {
                     <DrawerCloseButton _hover={{ cursor: 'pointer' }} mt='8px' />
                     <DrawerHeader borderBottom='3px solid white'>Menu</DrawerHeader>
                     <DrawerBody>
-                        <Box onClick={onClose} cursor="pointer" mb={4}>Register</Box>
-                        <Box onClick={onClose} cursor="pointer" mb={4}>Log In</Box>
-                        <Box onClick={onClose} cursor="pointer" mb={4}>Field Status</Box>
+                        <Link onClick={onClose} cursor="pointer" mb={4}>Register</Link>
+                        <Link onClick={onClose} cursor="pointer" mb={4} href='/login'>Log In</Link>
+                        <Link onClick={onClose} cursor="pointer" mb={4}>Field Status</Link>
                     </DrawerBody>
                 </DrawerContent>
             </Drawer>
