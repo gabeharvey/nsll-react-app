@@ -67,7 +67,7 @@ const Navbar = () => {
             <Link cursor="pointer" mr={4} href="/standings">
               Standings
             </Link>
-            <Link cursor="pointer" mr={4}>
+            <Link cursor="pointer" mr={4} href='/fieldstatus'>
               Field Status
             </Link>
           </Flex>
@@ -95,7 +95,7 @@ const Navbar = () => {
               <Link onClick={onClose} cursor="pointer" mb={4} href='/standings'>
                 Standings
               </Link>
-              <Link onClick={onClose} cursor="pointer" mb={4}>
+              <Link onClick={onClose} cursor="pointer" mb={4} href='/fieldstatus'>
                 Field Status
               </Link>
             </Flex>

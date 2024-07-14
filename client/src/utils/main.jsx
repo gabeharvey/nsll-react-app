@@ -5,7 +5,8 @@ import {ChakraProvider} from '@chakra-ui/react';
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import Home from '../components/Home.jsx';
 import LogIn from '../components/LogIn.jsx';
-import Standings from '../components/Standings.jsx'
+import Standings from '../components/Standings.jsx';
+import FieldStatus from '../components/FieldStatus.jsx';
 
 const router = createBrowserRouter([
   { path: '/',
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "standings",
         element: <Standings />
+      },
+      {
+        path: "fieldstatus",
+        element: <FieldStatus />
       }
     ]
   }
