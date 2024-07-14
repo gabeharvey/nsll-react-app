@@ -64,6 +64,9 @@ const Navbar = () => {
             <Link cursor="pointer" mr={4} href="/login">
               Log In
             </Link>
+            <Link cursor="pointer" mr={4} href="/standings">
+              Standings
+            </Link>
             <Link cursor="pointer" mr={4}>
               Field Status
             </Link>
@@ -88,6 +91,9 @@ const Navbar = () => {
               </Link>
               <Link onClick={onClose} cursor="pointer" mb={4} href="/login">
                 Log In
+              </Link>
+              <Link onClick={onClose} cursor="pointer" mb={4} href='/standings'>
+                Standings
               </Link>
               <Link onClick={onClose} cursor="pointer" mb={4}>
                 Field Status
