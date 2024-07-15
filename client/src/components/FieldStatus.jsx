@@ -44,9 +44,6 @@ const FieldStatus = () => {
       <Text fontSize="2xl" color="white" fontFamily="Graduate, sans-serif" mb={10}>
         Field Status
       </Text>
-      <Text fontSize="lg" color="white" fontFamily="Graduate, sans-serif" mb={5}>
-        Last updated: {formattedUpdateDate} at {formattedUpdateTime}
-      </Text>
       <Flex direction="column" width={['95%', '80%']} bg="white" p={5} boxShadow="md" rounded="md">
         {fields.map((field, index) => (
           <Box
@@ -67,6 +64,9 @@ const FieldStatus = () => {
           </Box>
         ))}
       </Flex>
+      <Text fontSize="lg" color="white" fontFamily="Graduate, sans-serif" mt={10}>
+        Last updated: {formattedUpdateDate} at {formattedUpdateTime}
+      </Text>
     </Flex>
   );
 };
