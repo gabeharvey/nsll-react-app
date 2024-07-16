@@ -41,19 +41,19 @@ const Standings = () => {
         <Table variant="striped" colorScheme="blue" size="sm">
           <Thead>
             <Tr>
-              <Th>Team</Th>
-              <Th>Wins</Th>
-              <Th>Losses</Th>
-              <Th>Ties</Th>
+              <Th fontFamily='Arsenal SC, cursive'>Team</Th>
+              <Th fontFamily='Arsenal SC, cursive'>Wins</Th>
+              <Th fontFamily='Arsenal SC, cursive'>Losses</Th>
+              <Th fontFamily='Arsenal SC, cursive'>Ties</Th>
             </Tr>
           </Thead>
           <Tbody>
             {baseballStandings.map((team, index) => (
               <Tr key={index}>
-                <Td>{team.team}</Td>
-                <Td>{team.wins}</Td>
-                <Td>{team.losses}</Td>
-                <Td>{team.ties}</Td>
+                <Td fontFamily='Arsenal SC, cursive'>{team.team}</Td>
+                <Td fontFamily='Arsenal SC, cursive'>{team.wins}</Td>
+                <Td fontFamily='Arsenal SC, cursive'>{team.losses}</Td>
+                <Td fontFamily='Arsenal SC, cursive'>{team.ties}</Td>
               </Tr>
             ))}
           </Tbody>
@@ -67,19 +67,19 @@ const Standings = () => {
         <Table variant="striped" colorScheme="yellow" size="sm">
           <Thead>
             <Tr>
-              <Th>Team</Th>
-              <Th>Wins</Th>
-              <Th>Losses</Th>
-              <Th>Ties</Th>
+              <Th fontFamily='Arsenal SC, cursive'>Team</Th>
+              <Th fontFamily='Arsenal SC, cursive'>Wins</Th>
+              <Th fontFamily='Arsenal SC, cursive'>Losses</Th>
+              <Th fontFamily='Arsenal SC, cursive'>Ties</Th>
             </Tr>
           </Thead>
           <Tbody>
             {softballStandings.map((team, index) => (
               <Tr key={index}>
-                <Td>{team.team}</Td>
-                <Td>{team.wins}</Td>
-                <Td>{team.losses}</Td>
-                <Td>{team.ties}</Td>
+                <Td fontFamily='Arsenal SC, cursive'>{team.team}</Td>
+                <Td fontFamily='Arsenal SC, cursive'>{team.wins}</Td>
+                <Td fontFamily='Arsenal SC, cursive'>{team.losses}</Td>
+                <Td fontFamily='Arsenal SC, cursive'>{team.ties}</Td>
               </Tr>
             ))}
           </Tbody>
