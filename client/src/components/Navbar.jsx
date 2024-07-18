@@ -64,6 +64,9 @@ const Navbar = () => {
             <Link cursor="pointer" mr={4} href="/login">
               Log In
             </Link>
+            <Link cursor="pointer" mr={4} href="/halloffame">
+              Hall of Fame
+            </Link>
             <Link cursor="pointer" mr={4} href="/standings">
               Standings
             </Link>
@@ -91,6 +94,9 @@ const Navbar = () => {
               </Link>
               <Link onClick={onClose} cursor="pointer" mb={4} href="/login">
                 Log In
+              </Link>
+              <Link onClick={onClose} cursor="pointer" mb={4} href="/halloffame">
+                Hall of Fame
               </Link>
               <Link onClick={onClose} cursor="pointer" mb={4} href='/standings'>
                 Standings
