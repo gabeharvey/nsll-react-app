@@ -1,7 +1,6 @@
 import { Box, Flex, Text, Table, Thead, Tbody, Tr, Th, Td } from '@chakra-ui/react';
 
 const Standings = () => {
-  // Sample data for standings
   const baseballStandings = [
     { team: 'Team A', wins: 10, losses: 2, ties: 1 },
     { team: 'Team B', wins: 8, losses: 4, ties: 0 },
