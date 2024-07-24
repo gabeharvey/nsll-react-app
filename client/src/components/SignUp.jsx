@@ -2,16 +2,16 @@ import { useState } from 'react';
 import { Box, Flex, Input, Button, Text } from '@chakra-ui/react';
 import axios from 'axios';
 
-const Login = () => {
+const SignUp = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = async () => {
+  const handleSignup = async () => {
     try {
-      await axios.post('/api/login', { username, password });
-      alert('Login successful');
+      await axios.post('/api/signup', { username, password });
+      alert('Signup successful');
     } catch (error) {
-      alert('Error logging in');
+      alert('Error signing up');
     }
   };
 
@@ -25,7 +25,7 @@ const Login = () => {
         width="300px"
         textAlign="left"
       >
-        <Text fontSize="2xl" color='skyblue' fontFamily='Graduate, sans-serif' mb={4}>Login</Text>
+        <Text fontSize="2xl" color='skyblue' fontFamily='Graduate, sans-serif' mb={4}>Sign Up</Text>
         <Input
           placeholder="Username"
           value={username}
@@ -42,17 +42,17 @@ const Login = () => {
           borderColor="skyblue"
         />
         <Button
-          onClick={handleLogin}
+          onClick={handleSignup}
           bg="skyblue"
           color="white"
           _hover={{ bg: "blue.600" }}
           width="100%"
         >
-          Login
+          Sign Up
         </Button>
       </Box>
     </Flex>
   );
 };
 
-export default Login;
+export default SignUp;

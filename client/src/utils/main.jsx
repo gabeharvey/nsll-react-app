@@ -8,6 +8,7 @@ import LogIn from '../components/LogIn.jsx';
 import Standings from '../components/Standings.jsx';
 import FieldStatus from '../components/FieldStatus.jsx';
 import HallOfFame from '../components/HallOfFame.jsx';
+import SignUp from '../components/SignUp.jsx';
 
 const router = createBrowserRouter([
   { path: '/',
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "halloffame",
         element: <HallOfFame />
+      },
+      {
+        path: "signup",
+        element: <SignUp />
       }
     ]
   }

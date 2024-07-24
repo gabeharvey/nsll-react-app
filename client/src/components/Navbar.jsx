@@ -45,8 +45,8 @@ const Navbar = () => {
       ) : (
         <Box display={{ base: 'none', md: 'block' }}>
           <Flex align="right" fontFamily="Graduate, sans-serif" fontSize="15px" color="white">
-            <Link cursor="pointer" mr={4}>
-              Register
+            <Link cursor="pointer" mr={4} href="/signup">
+              Sign Up
             </Link>
             <Link cursor="pointer" mr={4} href="/login">
               Log In
@@ -76,8 +76,8 @@ const Navbar = () => {
           <DrawerHeader borderBottom="3px solid white">Menu</DrawerHeader>
           <DrawerBody>
             <Flex direction="column">
-              <Link onClick={onClose} cursor="pointer" mb={4}>
-                Register
+              <Link onClick={onClose} cursor="pointer" mb={4} href="/signup">
+                Sign Up
               </Link>
               <Link onClick={onClose} cursor="pointer" mb={4} href="/login">
                 Log In
