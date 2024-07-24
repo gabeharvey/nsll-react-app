@@ -41,9 +41,7 @@ const FieldStatus = () => {
 
   return (
     <Flex direction="column" align="center" justify="center" minHeight="100vh" bg="skyblue" p={5} textAlign="center">
-      <Text fontSize="2xl" color="white" fontFamily="Graduate, sans-serif" mb={10}>
-        Field Status
-      </Text>
+      <Text fontSize="2xl" color="white" fontFamily="Graduate, sans-serif" mb={10}>Field Status</Text>
       <Flex direction="column" width={['95%', '80%']} bg="white" p={5} boxShadow="md" rounded="md">
         {fields.map((field, index) => (
           <Box
