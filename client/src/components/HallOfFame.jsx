@@ -1,17 +1,16 @@
-import { Box, Flex, Text, Table, Thead, Tbody, Tr, Th, Td } from '@chakra-ui/react';
+import { Box, Flex, Text, Table, Thead, Tbody, Tr, Th, Td, Image } from '@chakra-ui/react';
 
 const HallOfFame = () => {
-  // Sample data for Hall of Fame
   const baseballHallOfFame = [
-    { name: 'Player A', year: 2020 },
-    { name: 'Player B', year: 2019 },
-    { name: 'Player C', year: 2018 },
+    { name: 'Player A', year: 2020, imageUrl: '../src/assets/baseball-player.jpg' },
+    { name: 'Player B', year: 2019, imageUrl: '../src/assets/baseball-player.jpg' },
+    { name: 'Player C', year: 2018, imageUrl: '../src/assets/baseball-player.jpg' },
   ];
 
   const softballHallOfFame = [
-    { name: 'Player X', year: 2021 },
-    { name: 'Player Y', year: 2020 },
-    { name: 'Player Z', year: 2019 },
+    { name: 'Player X', year: 2021, imageUrl: '../src/assets/softball-player.jpg' },
+    { name: 'Player Y', year: 2020, imageUrl: '../src/assets/softball-player.jpg' },
+    { name: 'Player Z', year: 2019, imageUrl: '../src/assets/softball-player.jpg' },
   ];
 
   const scrollbarStyle = {
@@ -41,6 +40,7 @@ const HallOfFame = () => {
         <Table variant="striped" colorScheme="blue" size="sm">
           <Thead>
             <Tr>
+              <Th fontFamily='Arsenal SC, cursive'>Image</Th>
               <Th fontFamily='Arsenal SC, cursive'>Name</Th>
               <Th fontFamily='Arsenal SC, cursive'>Year</Th>
             </Tr>
@@ -48,6 +48,9 @@ const HallOfFame = () => {
           <Tbody>
             {baseballHallOfFame.map((inductee, index) => (
               <Tr key={index}>
+                <Td>
+                  <Image src={inductee.imageUrl} alt={inductee.name} boxSize="50px" objectFit="cover" borderRadius="4px" />
+                </Td>
                 <Td fontFamily='Arsenal SC, cursive'>{inductee.name}</Td>
                 <Td fontFamily='Arsenal SC, cursive'>{inductee.year}</Td>
               </Tr>
@@ -63,6 +66,7 @@ const HallOfFame = () => {
         <Table variant="striped" colorScheme="yellow" size="sm">
           <Thead>
             <Tr>
+              <Th fontFamily='Arsenal SC, cursive'>Image</Th>
               <Th fontFamily='Arsenal SC, cursive'>Name</Th>
               <Th fontFamily='Arsenal SC, cursive'>Year</Th>
             </Tr>
@@ -70,6 +74,9 @@ const HallOfFame = () => {
           <Tbody>
             {softballHallOfFame.map((inductee, index) => (
               <Tr key={index}>
+                <Td>
+                  <Image src={inductee.imageUrl} alt={inductee.name} boxSize="50px" objectFit="cover" borderRadius="4px" />
+                </Td>
                 <Td fontFamily='Arsenal SC, cursive'>{inductee.name}</Td>
                 <Td fontFamily='Arsenal SC, cursive'>{inductee.year}</Td>
               </Tr>
