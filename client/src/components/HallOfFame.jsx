@@ -49,7 +49,7 @@ const HallOfFame = () => {
             {baseballHallOfFame.map((inductee, index) => (
               <Tr key={index}>
                 <Td>
-                  <Image src={inductee.imageUrl} alt={inductee.name} boxSize="50px" objectFit="cover" borderRadius="4px" />
+                  <Image src={inductee.imageUrl} alt={inductee.name} boxSize="50px" objectFit="cover" borderRadius="3px" />
                 </Td>
                 <Td fontFamily='Arsenal SC, cursive'>{inductee.name}</Td>
                 <Td fontFamily='Arsenal SC, cursive'>{inductee.year}</Td>
@@ -75,7 +75,7 @@ const HallOfFame = () => {
             {softballHallOfFame.map((inductee, index) => (
               <Tr key={index}>
                 <Td>
-                  <Image src={inductee.imageUrl} alt={inductee.name} boxSize="50px" objectFit="cover" borderRadius="4px" />
+                  <Image src={inductee.imageUrl} alt={inductee.name} boxSize="50px" objectFit="cover" borderRadius="3px" />
                 </Td>
                 <Td fontFamily='Arsenal SC, cursive'>{inductee.name}</Td>
                 <Td fontFamily='Arsenal SC, cursive'>{inductee.year}</Td>
