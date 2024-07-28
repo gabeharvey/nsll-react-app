@@ -45,19 +45,19 @@ const Navbar = () => {
       ) : (
         <Box display={{ base: 'none', md: 'block' }}>
           <Flex align="right" fontFamily="Graduate, sans-serif" fontSize="15px" color="white">
-            <Link cursor="pointer" mr={4} href="/signup">
+            <Link cursor="pointer" mr={3} href="/signup">
               Sign Up
             </Link>
-            <Link cursor="pointer" mr={4} href="/login">
+            <Link cursor="pointer" mr={3} href="/login">
               Log In
             </Link>
-            <Link cursor="pointer" mr={4} href="/halloffame">
+            <Link cursor="pointer" mr={3} href="/halloffame">
               Hall of Fame
             </Link>
-            <Link cursor="pointer" mr={4} href="/standings">
+            <Link cursor="pointer" mr={3} href="/standings">
               Standings
             </Link>
-            <Link cursor="pointer" mr={4} href='/fieldstatus'>
+            <Link cursor="pointer" mr={3} href='/fieldstatus'>
               Field Status
             </Link>
           </Flex>
